@@ -43,15 +43,6 @@
         }
 
 
-        out.println("아이디:" + ID + "<br>");
-        out.println("성명:" + name + "<br>");
-        out.println("비밀번호:" + PW + "<br>");
-        out.println("성별:" + gender + "<br>");
-        out.println("생일:" + birthY + "-" + birthM + "-" + birthD + "<br>");
-        out.println("이메일:" + emailId + "@" + emailAd + "<br>");
-        out.println("연락처:" + phone1 + "-" + phone2 + "-" + phone3 + "<br>");
-        out.println("주소:" + address + "<br>");
-        out.println("관심분야:" + inter + "<br>");
 
         try {
             String sql="insert into member values(?,?,?,?,?,?,?,?,?)";
