@@ -8,6 +8,6 @@ pageEncoding="utf-8" %>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>회원관리 시스템</header>
+    <header><a href="./index.jsp"><h2>회원관리 시스템</h2></a></header>
 </body>
 </html>

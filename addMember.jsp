@@ -11,8 +11,10 @@
         }
 
         #tab1 {
-            width: 80%;
+            width: 95%;
             margin: 0 auto;
+            height: 30%;
+            border: 2px solid black;
         }
 
         #in1 {
@@ -34,11 +36,13 @@
             color: #fff;
             width: 20%;
             cursor: pointer;
+            margin: 10px;
         }
         tr td:first-child {
             font-weight: bold;
             text-align: center;
         }
+
     </style>
     <script>
         function check(){
@@ -81,7 +85,7 @@
     <%@ include file="header.jsp"%>
     <%@ include file="nav.jsp"%>
     <section>
-    <h1>회원가입</h1>    
+    <h1>회원 가입 등록 화면</h1>    
     <form name="frm" method="get" action="addMemberProcess.jsp">
         <table border="1" id="tab1">
             <tr>
