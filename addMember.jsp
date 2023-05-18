@@ -1,9 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>jsp 실습</title>
+
     <style>
         body h1 {
             text-align: center;
@@ -77,6 +78,9 @@
     </script>
 </head>
 <body>
+    <%@ include file="header.jsp"%>
+    <%@ include file="nav.jsp"%>
+    <section>
     <h1>회원가입</h1>    
     <form name="frm" method="get" action="addMemberProcess.jsp">
         <table border="1" id="tab1">
@@ -152,5 +156,6 @@
         </table>
     </form>
     </section>
+    <%@ include file="footer.jsp"%>
 </body>
 </html>

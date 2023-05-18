@@ -1,0 +1,57 @@
+header {
+    background-color: lightgray;
+    height: 12%;
+    text-align: center;
+    color: #333;
+    line-height: 100px;
+    font-weight: bold;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    height: 5%;
+    background-color: purple;
+    text-align: center;
+    line-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+}
+
+nav li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li:hover a {
+    text-decoration: underline;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 78%;
+}
+
+footer {
+    height: 5%;
+    background-color: lightgray;
+    text-align: center;
+    color: #fff;
+}
