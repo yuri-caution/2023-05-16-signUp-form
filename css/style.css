@@ -79,3 +79,40 @@ footer {
     border: 2px solid black;
     text-align: center;
 }
+
+body h1 {
+    text-align: center;
+}
+
+#tab1 {
+    width: 95%;
+    margin: 0 auto;
+    height: 30%;
+    border: 2px solid black;
+}
+
+#in1 {
+    height: 30px;
+    width: 30%;
+}
+ 
+#in2 {
+    height: 30px;
+    width: 90%;
+}
+
+#in3 {
+    height: 30px;
+    width: 15%;
+}
+#btn {
+    background-color: #333;
+    color: #fff;
+    width: 20%;
+    cursor: pointer;
+    margin: 10px;
+}
+tr td:first-child {
+    font-weight: bold;
+    text-align: center;
+}

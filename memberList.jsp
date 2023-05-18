@@ -58,7 +58,7 @@
                         <td><%=interest%></td>
                         <td id="btn2">
                             <a href="memberUpdat.jsp?ID=<%=ID%>">수정</a>/
-                            <a href="memberUpdat.jsp?ID=<%=ID%>">삭제</a>
+                            <a href="memberUpdat.jsp?ID=<%=ID%>" onclick="if(!confirm('정말로 삭제하시겠습니까?')) return false;">삭제</a>
                         </td>
                     </tr>
                     <%
