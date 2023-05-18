@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,15 +6,19 @@
     <title>jsp example</title>
 </head>
 <body>
+    <%@ include file="dbconn.jsp"%>;
     <%
-        request.setCharacterEncoding("UTF-8");
+        request.setCharacterEncoding("utf-8");
+
+        PreparedStatement pstmt = null;
+
         String ID=request.getParameter("ID");
         String name=request.getParameter("name");
         String PW=request.getParameter("PW");
         String gender=request.getParameter("gender");
-        String job=request.getParameter("job");
         String phone=request.getParameter("phone");
         String address=request.getParameter("address");
+        String job=request.getParameter("job");
         String hobby[]=request.getParameterValues("hobby");
         String ho="";
         if(hobby != null){
@@ -25,14 +29,30 @@
                     ho=ho+hobby[i]+",";
                 }
         }
-    out.println("아이디 : " + ID + "<br>");
-    out.println("이름 : " + name + "<br>");
-    out.println("비밀번호 : " + PW + "<br>");
-    out.println("성별 : " + gender + "<br>");
-    out.println("직업 : " + job + "<br>");
-    out.println("취미 : " + ho + "<br>");
-    out.println("전화번호 : " + phone + "<br>");
-    out.println("주소 : " + address + "<br>");
+
+        try {
+            String sql="insert into member0518 values(?,?,?,?,?,?,?,?)";
+            pstmt=conn.prepareStatement(sql);
+            pstmt.setString(1,ID);
+            pstmt.setString(2,name);
+            pstmt.setString(3,PW);
+            pstmt.setString(4,gender);
+            pstmt.setString(5,phone);
+            pstmt.setString(6,address);
+            pstmt.setString(7,job);
+            pstmt.setString(8,ho);
+            pstmt.executeUpdate();
     %>
+
+        <script>
+            alert("회원정보 등록 성공");
+            history.back(-1);
+        </script>
+        
+        <%
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
+        %>
 </body>
 </html>
