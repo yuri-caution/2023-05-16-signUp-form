@@ -84,8 +84,8 @@
                 <tr>
                     <td>이메일</td>
                     <td>
-                        <input type="text" name="emailId" id="in1" placeholder="이메일">@
-                        <input type="text" name="emailAd" id="in1" placeholder="gmail.com">
+                        <input type="text" name="emailId" id="in3" placeholder="이메일">@
+                        <input type="text" name="emailAd" id="in3" placeholder="gmail.com">
                     </td>
                 </tr>
                 <tr>

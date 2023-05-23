@@ -29,8 +29,8 @@ html, body {
 
 nav {
     height: 5%;
-    background-color: purple;
-    text-align: center;
+    background-color: black;
+    text-align: left;
     line-height: 50px;
 }
 
@@ -104,6 +104,7 @@ body h1 {
 #in3 {
     height: 30px;
     width: 15%;
+    text-align: center;
 }
 #btn {
     background-color: #333;
