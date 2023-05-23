@@ -13,7 +13,7 @@ header {
     height: 12%;
     text-align: center;
     color: #333;
-    line-height: 100px;
+    line-height: 80px;
     font-weight: bold;
 }
 
@@ -31,7 +31,7 @@ nav {
     height: 5%;
     background-color: black;
     text-align: left;
-    line-height: 50px;
+    line-height: 40px;
 }
 
 nav ul {
@@ -74,10 +74,14 @@ footer {
 
 
 #tab2 {
-    width: 95%;
+    width: 80%;
     margin: 0 auto;
     border: 2px solid black;
     text-align: center;
+}
+
+#tab2 tr:first-child {
+    background-color: #eee;
 }
 
 body h1 {
@@ -85,7 +89,7 @@ body h1 {
 }
 
 #tab1 {
-    width: 95%;
+    width: 70%;
     margin: 0 auto;
     height: 30%;
     border: 2px solid black;
@@ -94,6 +98,7 @@ body h1 {
 #in1 {
     height: 30px;
     width: 30%;
+    text-align: center;
 }
  
 #in2 {
@@ -113,7 +118,10 @@ body h1 {
     cursor: pointer;
     margin: 10px;
 }
+
 tr td:first-child {
     font-weight: bold;
     text-align: center;
 }
+
+
