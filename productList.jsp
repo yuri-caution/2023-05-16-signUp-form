@@ -52,7 +52,7 @@
                         <td><%=stock%></td>
                         <td><%=condition%></td>
                         <td id="btn2">
-                            <a href="productUpdat.jsp?code=<%=code%>">수정</a>/
+                            <a href="productUpdate.jsp?code=<%=code%>">수정</a>/
                             <a href="productDelete.jsp?code=<%=code%>" onclick="if(!confirm('정말로 삭제하시겠습니까?')) return false;">삭제</a>
                         </td>
                     </tr>
