@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <script>
+        function check(){
+            document.frm.submit()
+        }
+        
+    </script>
 </head>
 <body>
     <%@ include file="header.jsp"%>
@@ -55,11 +61,11 @@
                 <tr>
                     <td>분류</td>
                     <td>
-                        <select name="cate" value="<%=cate%>">
-                            <option value="IT">IT 제품</option>
-                            <option value="주방">주방 제품</option>
-                            <option value="전자">전자 제품</option>
-                            <option value="일반">일반 잡화</option>
+                        <select name="cate">
+                            <option value="IT" <%=cate.equals("IT")?"selected":"" %>>IT 제품</option>
+                            <option value="주방" <%=cate.equals("주방")?"selected":"" %>>주방 제품</option>
+                            <option value="전자" <%=cate.equals("전자")?"selected":"" %>>전자 제품</option>
+                            <option value="일반" <%=cate.equals("일반")?"selected":"" %>>일반 잡화</option>
                         </select>
                     </td>
                 </tr>

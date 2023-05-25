@@ -20,8 +20,6 @@
         String cate=request.getParameter("cate");
         String stock=request.getParameter("stock");
         String condition=request.getParameter("condition");
-        <interest.length
-}
 
         try {
             String sql="update product set name=?, unitprice=?,description=?,manufacturer=?,category=?,unitsInstock=?,condition1=? where productId=?";
@@ -38,7 +36,7 @@
     %>
 
         <script>
-            alert("회원정보 수정 성공");
+            alert("상품정보 수정 성공");
             location.href="productList.jsp";
         </script>
         
